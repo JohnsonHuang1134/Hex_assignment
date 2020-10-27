@@ -1,0 +1,107 @@
+/*==========================common==========================*/
+.container{
+	width: 1200px;
+	margin: 0 auto 72px;
+}
+.container h2{
+	font-size: 32px;
+	line-height: 43px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #000;
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+}
+h2 span{
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+	color: #A00404;
+	margin-left: 16px;
+}
+.container li{
+	font-size: 24px;
+	line-height: 36px;
+}
+/*==========================name==========================*/
+.name .container,
+.footer .container{
+	margin: 0 auto;
+}
+.name h1{
+	width: 1200px;
+	margin: 0 auto;
+	font-size: 80px;
+	line-height: 94px;
+	padding-bottom: 17px;
+	border-bottom: 2px solid #000;
+}
+.name img{
+	margin: 48px 0;
+}
+/*==========================profile==========================*/
+.profile ul + ul{
+	margin-top: 24px;
+}
+/*==========================education & exp==========================*/
+.education li + li,
+.exp li + li{
+	margin-top: 24px;
+}
+.exp ul{
+	padding-left: 24px;
+	border-left: 1px solid #96A9C4;
+	margin-left: 24px;
+}
+.exp img{
+	margin: 8px 0;
+}
+.exp p{
+	width: 650px;
+	font-size: 20px;
+	line-height: 30px;
+}
+/*==========================skills & footer==========================*/
+.skills,
+.footer{
+	background: #415165;
+	color: #fff;
+}
+.skills .container{
+	width: 996px;
+}
+.skills .container,
+.footer .container{
+	padding: 24px 0 36px;
+}
+.skills h2,
+.footer h2{
+	justify-content: center;
+	border-color: #fff;
+}
+.skills span,
+.footer span{
+	color: #fff;
+}
+.skills ul{
+	width: 200px;
+	margin: 0 auto;
+	padding-left: 24px;
+	border-left: 1px solid #96A9C4;
+}
+.skills li,
+.footer li{
+	font-weight: 300;
+}
+.skills li + li{
+	margin-top: 12px;
+}
+.footer{
+	text-align: center;
+}
+.footer .link_box{
+	display: flex;
+	width: 192px;
+	justify-content: space-between;
+	margin: 16px auto 0;
+}
