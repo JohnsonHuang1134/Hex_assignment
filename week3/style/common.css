@@ -9,29 +9,47 @@
 .common_header .header_logo{
 	margin: 30px 0;
 }
-.common_header .link_list{
+.header_link_list{
 	display: flex;
 }
-.link_list li{
+.header_link_list li{
 	font-size: 20px;
 	line-height: 30px;
 }
-.link_list li + li{
+.header_link_list li + li{
 	margin-left: 64px;
 }
-.link_list a{
+.header_link_list a{
 	color: #fff;
+}
+/*==========================footer==========================*/
+.common_footer{
+	/*temp mt*/
+	margin-top: 100px;
+	background: #AA0601;
+}
+.footer_link_list{
+	display: flex;
+}
+.footer_link_list li{
+	font-size: 16px;
+	line-height: 24px;
+}
+.footer_link_list li + li{
+	margin-left: 48px;
 }
 /*==========================Media queries==========================*/
 @media only screen and (max-width: 1023px){
+	/*header*/
 	.common_header{
 		padding: 0 39px;
 	}
-	.link_list li + li{
+	.header_link_list li + li{
 		margin-left: 40px;
 	}
 }
 @media only screen and (max-width: 767px){
+	/*header*/
 	.common_header{
 		padding: 0;
 		flex-direction: column;
@@ -40,16 +58,16 @@
 		width: 48px;
 		margin: 10px 0;
 	}
-	.common_header .link_list{
+	.common_header .header_link_list{
 		width: 100%;
 		flex-wrap: wrap;
 	}
-	.link_list li{
+	.header_link_list li{
 		width: calc(50% - 2px);
 		text-align: center;
 		border: 1px solid #fff;
 	}
-	.link_list li + li{
+	.header_link_list li + li{
 		margin: 0;
 	}
 }
