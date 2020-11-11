@@ -6,7 +6,7 @@
 	background: #AA0601;
 	padding: 0 88px;
 }
-.common_header .header_logo{
+.header_logo{
 	margin: 30px 0;
 }
 .header_link_list{
@@ -14,7 +14,7 @@
 }
 .header_link_list li{
 	font-size: 20px;
-	line-height: 30px;
+	line-height: 28px;
 }
 .header_link_list li + li{
 	margin-left: 64px;
@@ -26,17 +26,78 @@
 .common_footer{
 	/*temp mt*/
 	margin-top: 100px;
+
 	background: #AA0601;
+}
+.common_footer .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: flex-start;
 }
 .footer_link_list{
 	display: flex;
+	align-items: center;
 }
 .footer_link_list li{
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 22px;
 }
 .footer_link_list li + li{
 	margin-left: 48px;
+}
+.footer_link_list a{
+	color: #fff;
+}
+.footer_icon_list{
+	display: flex;
+	align-items: center;
+}
+.footer_icon_list li{
+	margin-left: 32px;
+}
+.footer_contact_list{
+	width: 100%;
+}
+.footer_contact_list li{
+	font-size: 36px;
+	line-height: 48px;
+	color: #fff;
+}
+.footer_contact_list a{
+	color: #fff;
+}
+.footer_terms_box{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding-left: 118px;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 24px 0 28px;
+	color: #fff;
+	border-top: 1px solid #fff;
+}
+.footer_logo{
+	margin-right: 38px;
+}
+.footer_terms_list{
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+.footer_terms_list li{
+	margin-left: 62px;
+}
+.footer_terms_list a{
+	color: #fff;
+}
+/*==========================common==========================*/
+.container{
+	max-width: 1110px;
+	margin: 0 auto;
 }
 /*==========================Media queries==========================*/
 @media only screen and (max-width: 1023px){
@@ -47,6 +108,17 @@
 	.header_link_list li + li{
 		margin-left: 40px;
 	}
+	/*footer*/
+	.footer_logo{
+		display: none;
+	}
+	.footer_link_list li + li{
+		margin-left: 40px;
+	}
+	/*common*/
+	.container{
+		max-width: 690px;
+	}
 }
 @media only screen and (max-width: 767px){
 	/*header*/
@@ -54,11 +126,11 @@
 		padding: 0;
 		flex-direction: column;
 	}
-	.common_header .header_logo{
+	.header_logo{
 		width: 48px;
 		margin: 10px 0;
 	}
-	.common_header .header_link_list{
+	.header_link_list{
 		width: 100%;
 		flex-wrap: wrap;
 	}
@@ -69,5 +141,9 @@
 	}
 	.header_link_list li + li{
 		margin: 0;
+	}
+	/*footer*/
+	.footer_terms_box{
+		padding: 18px 0 25px;
 	}
 }
