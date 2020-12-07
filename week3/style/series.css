@@ -1,0 +1,221 @@
+.series_menu{
+	display: flex;
+	height: 35px;
+}
+.series_menu li{
+	position: relative;
+	width: 100%;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	border: 1px solid #DCDCDC;
+	cursor: pointer;
+}
+.series_menu li::before{
+	content:'';
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	margin-right: 5px;
+}
+.series_menu li::after{
+	content:'';
+	position: absolute;
+	width: 0;
+	height: 4px;
+	background: #AA0601;
+	bottom: 0;
+	transition-duration: .3s;
+}
+.series_menu li:active::after{
+	width: 100%;
+}
+.series_menu li.on::after{
+	width: 100%;
+}
+.series_menu li:nth-child(1)::before{
+	background-image:url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/c7639be6b4ca9e758e4c0f8fc6cb52b44e94b323/week3/icon-diamond-black.svg');
+}
+.series_menu li:nth-child(2)::before{
+	background-image:url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/c7639be6b4ca9e758e4c0f8fc6cb52b44e94b323/week3/icon-sun-black.svg');
+}
+.series_menu li:nth-child(3)::before{
+	background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/c7639be6b4ca9e758e4c0f8fc6cb52b44e94b323/week3/icon-thunder-black.svg');
+}
+.series_pic{display: flex;}
+.series_pic span{
+	width: 50%;
+	height: 144px;
+}
+.series_pic1{
+	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-1.png')no-repeat center/cover;
+}
+.series_pic2{
+	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/	banner-2.png')no-repeat center/cover;
+}
+.series_txt{
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.series_item+.series_item{
+	margin-top: 32px;
+}
+.series_body h1{
+	margin-bottom: 0;
+	color: #000;
+}
+.series_detail{
+	display: flex;
+	font-size: 16px;
+	flex-wrap: wrap;
+}
+.series_model,
+.series_money{
+	width: 50%;
+	line-height: 21px
+}
+.series_money {
+	color: #AA0601;
+	text-align: right;
+}
+.series_color li{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 4px;
+}
+.series_color li:nth-child(1){background: #5F3E2D;}
+.series_color li:nth-child(2){background: #B75929;}
+.series_color li+li{
+	margin-left: 4px;
+}
+/*==========================Media queries==========================*/
+@media(min-width: 768px){
+	.banner_store{
+		height: 304px;
+		padding: 15px 40px;
+	}
+	.store .info_content{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.choose{
+		margin-bottom: 24px;
+	}
+	.choose_txt{
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.store_item{
+		flex: none;
+		width: calc(100% / 2 - 15px);
+		margin-bottom: 20px;
+	}
+	.store_item+.store_item{
+		margin-top: 0;
+	}
+	.store_item{
+		margin-left: 30px;
+	}
+	.store_item:nth-child(2n){
+		margin-left: 0;
+	}
+	.question_h1{margin-bottom: 36px;}
+	.question_item ul{
+		padding: 16px 0 40px 60px;
+	}
+	.question_item li{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.question_item li+li{margin-top: 0;}
+
+	.series_menu{
+		height: 70px;
+	}
+	.series_menu li{
+		font-size: 28px;
+	}
+	.series_menu li::before{
+		width: 32px;
+		height: 32px;
+	}
+	.series_pic span{
+		height: 310px;
+	}
+	.series_txt{
+		font-size: 24px;
+		line-height: 36px;
+	}
+	.series_body .info_content{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.series_item{
+		width: 50%;
+		padding: 0 15px 72px;
+	}
+	.series_item+.series_item{margin-top: 0;}
+}
+@media(min-width: 1280px){
+	.series_menu{
+		max-width: 1390px;
+		height: 100px;
+		margin: auto;
+	}
+	.series_menu li{font-size: 42px;}
+	.series_menu li::before{
+		width: 48px;
+		height: 48px;
+	}
+	.series_pic span{height: 310px;}
+	.series_pic1{margin-right: 15px;}
+	.series_pic2{margin-left: 15px;}
+	.series_item{
+		width: 25%;
+		padding: 0 15px 100px
+	}
+	.choose_txt{font-size: 24px;}
+	.store_item{
+		width: calc(100% / 3 - 20px);
+	}
+	.store_item:nth-child(2n){
+		margin-left: 30px;
+	}
+	.store_item:nth-child(0),
+	.store_item:nth-child(3n - 1){
+		margin-left: 0;
+	}
+	.area_name{
+		font-size: 24px;
+		line-height: 36px;
+		padding: 12px 24px;
+	}
+	.area_info p{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.detail_btn{
+		height: 65px;
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.question_h1{
+		font-size: 32px;
+	}
+	.question_item ul {
+		padding: 16px 0 40px 90px;
+	}
+}
+@media (pointer: fine),
+(pointer: fine) and (-moz-touch-enabled: 0),
+screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+	.series_menu li:hover::after{
+		width: 100%;
+	}
+}

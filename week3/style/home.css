@@ -1,0 +1,452 @@
+.banner{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 395px;
+	justify-content: flex-end;
+	align-items: center;
+	background: url('../images/banner.png')no-repeat center/cover;
+	padding-right: 15px;
+}
+.banner_txt{
+	text-align: right;
+	color: #650300;
+}
+.banner_p1{
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: normal;
+}
+.banner_p2{
+	font-size: 32px;
+	line-height: 45px;
+	font-weight: bold;
+}
+.about{ background: #AA06010D;}
+.about h1{ font-size: 24px;}
+
+.about_item{
+	width: 100%;
+	text-align: center;
+	padding: 0 50px;
+}
+.about_item+.about_item{
+	margin-top: 40px;
+}
+.about_item .pic{
+	width: 80px;
+	height: 80px;
+	margin: auto;
+}
+.about_title{
+	font-size: 20px;
+	color: #650300;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+.about_txt{
+	text-align: left;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+}
+.product_item{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.about_item .pic{
+	margin-bottom: 16px;
+}
+.product_item+.product_item{margin-top: 8px;}
+.product_item>img{width: 345px;}
+.product_item .txt{
+	position: absolute;
+	color: #fff;
+	font-size: 28px;
+	line-height: 37px;
+	font-style: italic;
+	font-weight: 900;
+}
+.product_item .txt::before{
+	content:'';
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: 0;
+	bottom: 0;
+	right: calc(100% + 8px);
+	margin: auto 0;
+}
+.dig::before{
+	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-diamond-white.svg')no-repeat center/contain;
+}
+.sunny::before{
+	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-sun-white.svg')no-repeat center/contain;
+}
+.light::before{
+	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-thunder-white.svg')no-repeat center/contain;
+}
+.design{
+	background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png)no-repeat center/cover ;
+}
+.design_item > img{
+	width: 345px;
+}
+.design_item{
+	position: relative;
+}
+.design_item + .design_item{
+	margin-top: 16px;
+}
+.design_item::before{
+	content:attr(data-txt);
+	color: #AA0601;
+	font-size: 32px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	background: rgba(255,255,255,.5);
+}
+.recommend img{
+	width: 345px;
+}
+.recommend_item{
+	border:1px solid #DEE2E6;
+}
+.recommend_item+.recommend_item{
+	margin-top: 16px;
+}
+.recommend_item .txt_box{
+	padding: 16px;
+}
+.recommend_item .txt{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+.name{
+	margin-bottom: 16px;
+	line-height: 21px;
+}
+.date{
+	color: #707070;
+}
+.contact{
+	background: #AA06010D;
+}
+.contact .note{
+	font-size: 16px;
+	line-height: 24px;
+}
+.contact .txt{
+	margin-top: 8px;
+	margin-bottom: 2px;
+}
+.inp_box{
+	width: 100%;
+	height: 36px;
+	border: 1px solid #000000;
+	background: transparent;
+	font-size: 14px;
+	padding-left: 12px;
+}
+.inp_box.large{
+	padding-top: 10px;
+	height: 100px;
+}
+.chbox{
+	display: block;
+	width: 100%;
+	margin-top: 16px;
+	display: flex;
+	align-items: center;
+	line-height: 21px;
+}
+.chbox input{display: none;}
+.chbox span{
+	position: relative;
+	display:block;
+	flex: none;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #000;
+	margin: 3px;
+}
+.chbox input:checked + span:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 3px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 10px;
+	height: 5px;
+	border-left: 2px solid #000;
+	border-bottom: 2px solid #000;
+	transform: rotate( 315deg);
+}
+.contact .btn{
+	display: block;
+	width: 350px;
+	height: 54px;
+	background: #AA0601;
+	color: #fff;
+	margin: 42px auto 0;
+}
+.contact .btn{
+	display: block;
+	width: 165px;
+	height: 36px;
+	background: #AA0601;
+	color: #fff;
+	margin: 24px auto 0;
+}
+/*==========================Media queries==========================*/
+@media(min-width: 768px){
+	.about h1{
+		font-size: 32px;
+		margin-bottom: 32px;
+	}
+	.banner{
+		padding-right: 40px;
+		height: 840px;
+	}
+	.banner_p1{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.banner_p2{
+		font-size: 48px;
+		line-height: 67px;
+	}
+	.about .info_content{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.about_item{
+		width: calc(100% / 2 );
+		padding: 0 45px;
+		margin-bottom: 40px;
+	}
+	.about_item + .about_item{
+		margin-top: 0;
+		margin-left: 0;
+	}
+	.product_item{
+		justify-content: flex-start;
+	}
+	.product_item>img{width: 390px;}
+	.product_item .txt{
+		position: relative;
+		color: #AA0601;
+		margin-left: 70px;
+	}
+	.dig::before{
+		background-image: url('../images/icon_dig.svg');
+	}
+	.sunny::before{
+		background-image: url('../images/icon_sunny.svg');
+	}
+	.light::before{
+		background-image: url('../images/icon_light.svg');
+	}
+	.design .info_content{
+		display: flex;
+		justify-content: center;
+	}
+	.design_item > img{
+		width: 330px;
+	}
+	.design_item+.design_item{
+		margin-top: 0;
+		margin-left: 30px;
+	}
+	.recommend .info_content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.recommend_item{
+		width: 100%;
+		max-width: 330px;
+		margin-bottom: 40px;
+	}
+	.recommend_item+.recommend_item{margin-top: 0;}
+	.contact .info_content{
+		padding: 0 120px;
+	}
+	.contact .btn{
+		width: 220px;
+		font-size: 16px;
+	}
+}
+@media(min-width: 1280px){
+	.about h1{
+		font-size: 48px;
+		line-height: 72px;
+		margin-bottom: 60px;
+	}
+	.about .info_content{
+		display: flex;
+		justify-content: center;
+		flex-wrap: nowrap;
+	}
+	.banner_p1{
+		font-size: 36px;
+		line-height: 50px;
+	}
+	.banner_p2{
+		font-size: 64px;
+		line-height: 96px;
+	}
+	.about{
+		background: #AA06010D;
+	}
+	.about_item{
+		width: calc(100% / 4);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: flex-start;
+		padding: 0;
+	}
+	.about_item + .about_item{
+		margin-left: 76px;
+	}
+	.about_item .pic{height: 100px;}
+
+	.about_item .txt{
+		margin-top: 40px;
+	}
+	.about_title{
+		font-size: 24px;
+		line-height: 36px;
+		margin-bottom: 4px;
+	}
+	.about_txt{
+		font-size: 16px;
+		line-height: 24px;
+		align-self: flex-start;
+	}
+	.product_item{
+		display: flex;
+		align-items: center;
+	}
+	.product_item:nth-child(2){
+		flex-direction: row-reverse;
+	}
+	.product_item>img{
+		width: 645px;
+	}
+	.product_item .txt{
+		position: relative;
+		display: block;
+		font-size: 48px;
+		color: #AA0601;
+		margin-left: 86px;
+		font-weight: 900;
+	}
+	.product_item:nth-child(2) .txt{
+		margin-left: 0;
+		margin-right: 86px;
+	}
+	.info_product li{
+		display: flex;
+		align-items: center;
+	}
+	.info_product li:nth-child(2) .txt{
+		margin-left: 0;
+		margin-right: 86px;
+	}
+	.product_item+.product_item{
+		margin-top: 32px;
+	}
+	.design_item{
+		position: relative;
+		max-width: 540px;
+	}
+	.design_item::before{font-size: 76px;}
+	.design_item + .design_item{
+		margin-left: 30px;
+	}
+	.design_item > img{
+		width: 100%;
+	}
+	.recommend .info_content{
+		display: flex;
+		justify-content: center;
+		flex-wrap: nowrap;
+	}
+	.recommend img{width: 100%;}
+	.recommend_item{
+		width: calc(100% / 4);
+		margin-bottom: 0;
+	}
+	.recommend_item+.recommend_item{
+		margin-left: 30px;
+	}
+	.recommend .name{
+		font-size: 14px;
+		line-height: 21px;
+		margin-top: 7px;
+	}
+	.recommend .txt{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.recommend .date{
+		font-size: 14px;
+		line-height: 21px;
+		color: #707070;
+		margin-top: 10px;
+	}
+	.contact h1{
+		color: #000;
+		margin-bottom: 24px;
+	}
+	.contact .txt_box{
+		width: 100%;
+		max-width: 730px;
+		margin: auto;
+	}
+	.contact .note{
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 4px;
+	}
+	.contact .txt{
+		margin-top: 16px;
+		margin-bottom: 4px;
+		line-height: 24px;
+	}
+	.chbox{
+		display: block;
+		width: 100%;
+		margin-top: 16px;
+		display: flex;
+		align-items: center;
+	}
+	.chbox span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 1px solid #000;
+		margin: 4px;
+	}
+	.contact .btn{
+		width: 350px;
+		height: 54px;
+		margin: 42px auto 0;
+	}
+	.inp_box{
+		height: 50px;
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,41 @@
+.location_map{
+	margin-top: 10px;
+}
+@media(min-width: 768px){
+	.location .store_item{
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.location img{
+		width: 50%;
+	}
+	.location .store_title{
+		width: calc(50% - 30px);
+	}
+	.location .location_map{
+		width: 100%;
+	}
+}
+@media(min-width: 1280px){
+	.location .info_content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.location .store_item{
+		width: 40%;
+		display: block;
+	}
+	.location .store_title{
+		width: 100%;
+	}
+	.location img{
+		width: 100%;
+	}
+	.location .location_map{
+		width: calc(60% - 30px);
+		margin-top: 0;
+	}
+}
