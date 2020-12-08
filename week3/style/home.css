@@ -92,7 +92,7 @@
 	background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png)no-repeat center/cover ;
 }
 .design_item > img{
-	width: 345px;
+	width: 100%;
 }
 .design_item{
 	position: relative;
@@ -114,10 +114,12 @@
 	background: rgba(255,255,255,.5);
 }
 .recommend img{
-	width: 345px;
+	width: 100%;
 }
 .recommend_item{
 	border:1px solid #DEE2E6;
+	max-width: 345px;
+	margin: auto;
 }
 .recommend_item+.recommend_item{
 	margin-top: 16px;
@@ -238,6 +240,12 @@
 	.about_item + .about_item{
 		margin-top: 0;
 		margin-left: 0;
+	}
+	.product{
+		text-align: center;
+	}
+	.product .info_content{
+		display: inline-block;
 	}
 	.product_item{
 		justify-content: flex-start;
@@ -384,7 +392,6 @@
 		justify-content: center;
 		flex-wrap: nowrap;
 	}
-	.recommend img{width: 100%;}
 	.recommend_item{
 		width: calc(100% / 4);
 		margin-bottom: 0;

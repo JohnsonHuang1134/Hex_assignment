@@ -55,12 +55,21 @@
 	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-1.png')no-repeat center/cover;
 }
 .product_pic2{
-	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/	banner-2.png')no-repeat center/cover;
+	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-2.png')no-repeat center/cover;
+}
+.product_pic3{
+	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-3.png')no-repeat center/cover;
+}
+.product_pic4{
+	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-2-color.png')no-repeat center/cover;
 }
 .product_txt{
 	font-size: 16px;
 	text-align: center;
 	margin-bottom: 20px;
+}
+.product_item img{
+	width: 100%;
 }
 .product_item+.product_item{
 	margin-top: 32px;
@@ -179,6 +188,14 @@
 	.product_item{
 		width: 25%;
 		padding: 0 15px 100px
+	}
+	.sun .product_item{
+		width: 33.3%;
+	}
+	.sun .product_model,
+	.sun .product_money{
+		width: 100%;
+		text-align: left;
 	}
 	.choose_txt{font-size: 24px;}
 	.store_item{

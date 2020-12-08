@@ -283,7 +283,6 @@ h2{
 }
 .footer_copyright{
 	display: flex;
-	flex-direction: row-reverse;
 }
 .copyright_pic{
 	position: absolute;
@@ -293,6 +292,9 @@ h2{
 }
 .copyright_txt{
 	margin-bottom: 7px;
+}
+.footer_copyright{
+	width: 100%;
 }
 .footer_privacy span{
 	display: block;
@@ -447,6 +449,9 @@ h2{
 		justify-content: space-between;
 	}
 	.copyright_pic{display: none;}
+	.footer_copyright{
+		width: auto;
+	}
 	.footer_privacy{
 		display: flex;
 	}
