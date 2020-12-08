@@ -18,6 +18,9 @@
 .blogs_info{
 	display: none;
 }
+.blogs_info:after{
+	content: 'more';
+}
 .more_txt{
 	display: none;
 }
@@ -85,6 +88,7 @@
 }
 .page_link img{
 	width: 16px;
+	margin-right: 8px;
 }
 .tag_title{
 	display: flex;
@@ -131,14 +135,17 @@
 		margin-left: 32px;
 	}
 	.blogs_item h2{margin-top: 0;}
-	.blogs_item{
+	.blogs_item a{
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.blogs_item img{ width: 50%;}
+	.blogs_item img{ 
+		width: 50%;
+		margin-right: 30px;
+	}
 	.blogs_txt{
 		position: relative;
-		width: 50%;
+		width: calc(50% - 30px);
 		align-content: flex-start;
 	}
 	.blogs_info{
@@ -153,17 +160,39 @@
 		overflow: hidden;
 		text-overflow : ellipsis;
 	}
-	.more_txt{
-		display: block;
-		position: absolute;
-		font-size: 14px;
-		bottom: 5px;
-		right: 0;
-		background: #fff;
-		padding-left: 6px;
-	}
 	.blogs_more .info_content{
 		padding: 8px 40px 106px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.blogs_main{
+		width: calc(80% - 30px);
+		margin-right: 30px;
+	}
+	.popular_tag{
+		width: 20%;
+	}
+	.blogs_link_box{
+		order: 2;
+		width: 100%;
+	}
+	.page_link{
+		display: flex;
+		justify-content: space-between;
+	}
+	.page_link li{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.page_link .next_link{
+		flex-direction: row-reverse;
+	}
+	.page_link img{
+		width: 20px;
+	}
+	.next_link img{
+		margin-right: 0;
+		margin-left: 8px;
 	}
 }
 @media(min-width: 1279px){
@@ -187,7 +216,14 @@
 	.blogs_txt{
 		width: 40%;
 	}
+	.blogs_info:after{
+		content: '';
+	}
 	.more_txt {
+		display: block;
+		position: absolute;
+		bottom: 5px;
+		right: 0;
 		font-size: 36px;
 		line-height: 48px;
 		color: #650300;
@@ -196,7 +232,31 @@
 	}
 	.blogs_item img{
 		width: calc(60% - 30px);
-		margin-right: 30px;
 	}
 	.more_txt tt{display: none;}
+	.tag_title{
+		font-size: 28px;
+		line-height: 37px;
+	}
+	.tag_title img{
+		width: 48px;
+	}
+	.pop_tag_item{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.link_icon{
+		width: 24px;
+	}
+	.share_txt{
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.page_link li{
+		font-size: 19px;
+		line-height: 26px;
+	}
+	.page_link img{
+		width: 24px;
+	}
 }

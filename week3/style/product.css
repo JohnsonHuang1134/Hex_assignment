@@ -1,8 +1,8 @@
-.series_menu{
+.product_menu{
 	display: flex;
 	height: 35px;
 }
-.series_menu li{
+.product_menu li{
 	position: relative;
 	width: 100%;
 	font-size: 14px;
@@ -12,7 +12,7 @@
 	border: 1px solid #DCDCDC;
 	cursor: pointer;
 }
-.series_menu li::before{
+.product_menu li::before{
 	content:'';
 	display: block;
 	width: 15px;
@@ -22,7 +22,7 @@
 	background-position: center;
 	margin-right: 5px;
 }
-.series_menu li::after{
+.product_menu li::after{
 	content:'';
 	position: absolute;
 	width: 0;
@@ -31,67 +31,67 @@
 	bottom: 0;
 	transition-duration: .3s;
 }
-.series_menu li:active::after{
+.product_menu li:active::after{
 	width: 100%;
 }
-.series_menu li.on::after{
+.product_menu li.on::after{
 	width: 100%;
 }
-.series_menu li:nth-child(1)::before{
+.product_menu li:nth-child(1)::before{
 	background-image:url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/c7639be6b4ca9e758e4c0f8fc6cb52b44e94b323/week3/icon-diamond-black.svg');
 }
-.series_menu li:nth-child(2)::before{
+.product_menu li:nth-child(2)::before{
 	background-image:url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/c7639be6b4ca9e758e4c0f8fc6cb52b44e94b323/week3/icon-sun-black.svg');
 }
-.series_menu li:nth-child(3)::before{
+.product_menu li:nth-child(3)::before{
 	background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/c7639be6b4ca9e758e4c0f8fc6cb52b44e94b323/week3/icon-thunder-black.svg');
 }
-.series_pic{display: flex;}
-.series_pic span{
+.product_pic{display: flex;}
+.product_pic span{
 	width: 50%;
 	height: 144px;
 }
-.series_pic1{
+.product_pic1{
 	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-1.png')no-repeat center/cover;
 }
-.series_pic2{
+.product_pic2{
 	background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/	banner-2.png')no-repeat center/cover;
 }
-.series_txt{
+.product_txt{
 	font-size: 16px;
 	text-align: center;
 	margin-bottom: 20px;
 }
-.series_item+.series_item{
+.product_item+.product_item{
 	margin-top: 32px;
 }
-.series_body h1{
+.product_body h1{
 	margin-bottom: 0;
 	color: #000;
 }
-.series_detail{
+.product_detail{
 	display: flex;
 	font-size: 16px;
 	flex-wrap: wrap;
 }
-.series_model,
-.series_money{
+.product_model,
+.product_money{
 	width: 50%;
 	line-height: 21px
 }
-.series_money {
+.product_money {
 	color: #AA0601;
 	text-align: right;
 }
-.series_color li{
+.product_color li{
 	display: inline-block;
 	width: 15px;
 	height: 15px;
 	border-radius: 4px;
 }
-.series_color li:nth-child(1){background: #5F3E2D;}
-.series_color li:nth-child(2){background: #B75929;}
-.series_color li+li{
+.product_color li:nth-child(1){background: #5F3E2D;}
+.product_color li:nth-child(2){background: #B75929;}
+.product_color li+li{
 	margin-left: 4px;
 }
 /*==========================Media queries==========================*/
@@ -135,48 +135,48 @@
 	}
 	.question_item li+li{margin-top: 0;}
 
-	.series_menu{
+	.product_menu{
 		height: 70px;
 	}
-	.series_menu li{
+	.product_menu li{
 		font-size: 28px;
 	}
-	.series_menu li::before{
+	.product_menu li::before{
 		width: 32px;
 		height: 32px;
 	}
-	.series_pic span{
+	.product_pic span{
 		height: 310px;
 	}
-	.series_txt{
+	.product_txt{
 		font-size: 24px;
 		line-height: 36px;
 	}
-	.series_body .info_content{
+	.product_body .info_content{
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.series_item{
+	.product_item{
 		width: 50%;
 		padding: 0 15px 72px;
 	}
-	.series_item+.series_item{margin-top: 0;}
+	.product_item+.product_item{margin-top: 0;}
 }
 @media(min-width: 1279px){
-	.series_menu{
+	.product_menu{
 		max-width: 1390px;
 		height: 100px;
 		margin: auto;
 	}
-	.series_menu li{font-size: 42px;}
-	.series_menu li::before{
+	.product_menu li{font-size: 42px;}
+	.product_menu li::before{
 		width: 48px;
 		height: 48px;
 	}
-	.series_pic span{height: 310px;}
-	.series_pic1{margin-right: 15px;}
-	.series_pic2{margin-left: 15px;}
-	.series_item{
+	.product_pic span{height: 310px;}
+	.product_pic1{margin-right: 15px;}
+	.product_pic2{margin-left: 15px;}
+	.product_item{
 		width: 25%;
 		padding: 0 15px 100px
 	}
@@ -215,7 +215,7 @@
 @media (pointer: fine),
 (pointer: fine) and (-moz-touch-enabled: 0),
 screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
-	.series_menu li:hover::after{
+	.product_menu li:hover::after{
 		width: 100%;
 	}
 }
