@@ -1,7 +1,7 @@
 .location_map{
 	margin-top: 10px;
 }
-@media(min-width: 768px){
+@media(min-width: 767px){
 	.location .store_item{
 		display: flex;
 		width: 100%;
@@ -18,7 +18,7 @@
 		width: 100%;
 	}
 }
-@media(min-width: 1280px){
+@media(min-width: 1279px){
 	.location .info_content{
 		display: flex;
 		flex-wrap: wrap;

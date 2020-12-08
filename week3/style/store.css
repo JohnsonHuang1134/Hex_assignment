@@ -52,7 +52,7 @@
 	color: #fff;
 	background: #000;
 }
-@media(min-width: 768px){
+@media(min-width: 767px){
 	.store.info_box{
 		padding: 8px 40px 56px;
 	}
@@ -75,7 +75,7 @@
 		margin-left: 0;
 	}
 }
-@media(min-width: 1280px){
+@media(min-width: 1279px){
 	.store.info_box{
 		padding: 16px 0 100px;
 	}

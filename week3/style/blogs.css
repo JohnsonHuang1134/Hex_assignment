@@ -106,7 +106,7 @@
 	font-weight: bold;
 }
 /*==========================Media queries==========================*/
-@media(min-width: 768px){
+@media(min-width: 767px){
 	.blogs_menu {
 		display: block;
 		background: #650300;
@@ -166,7 +166,7 @@
 		padding: 8px 40px 106px;
 	}
 }
-@media(min-width: 1280px){
+@media(min-width: 1279px){
 	.blogs_menu .info_content{
 		padding: 0;
 	}

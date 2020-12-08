@@ -95,7 +95,7 @@
 	margin-left: 4px;
 }
 /*==========================Media queries==========================*/
-@media(min-width: 768px){
+@media(min-width: 767px){
 	.banner_store{
 		height: 304px;
 		padding: 15px 40px;
@@ -162,7 +162,7 @@
 	}
 	.series_item+.series_item{margin-top: 0;}
 }
-@media(min-width: 1280px){
+@media(min-width: 1279px){
 	.series_menu{
 		max-width: 1390px;
 		height: 100px;

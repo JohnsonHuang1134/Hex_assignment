@@ -299,7 +299,7 @@ h2{
 }
 .footer_privacy span+span{margin-top: 7px;}
 /*==========================Media queries==========================*/
-@media (min-width: 768px){
+@media (min-width: 767px){
 	.mt-md-1{
 		margin-top: 8px;
 	}
@@ -455,7 +455,7 @@ h2{
 		margin-left: 24px;
 	}
 }
-@media(min-width: 1280px){
+@media(min-width: 1279px){
 	.mt-xl-1{
 		margin-top: 8px;
 	}
