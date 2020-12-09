@@ -1,0 +1,130 @@
+/*==========================common==========================*/
+h2 span {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #a00404;
+    margin-left: 16px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto 72px;
+    h2 {
+        font-size: 32px;
+        line-height: 43px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #000;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    li {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+/*==========================name==========================*/
+.name {
+    .container {
+        margin: 0 auto;
+    }
+    h1 {
+        width: 1200px;
+        margin: 0 auto;
+        font-size: 80px;
+        line-height: 94px;
+        padding-bottom: 17px;
+        border-bottom: 2px solid #000;
+    }
+    img {
+        margin: 48px 0;
+    }
+}
+/*==========================profile==========================*/
+.profile {
+    ul + ul {
+        margin-top: 24px;
+    }
+}
+/*==========================education==========================*/
+.education {
+    li + li {
+        margin-top: 24px;
+    }
+}
+/*==========================exp==========================*/
+.exp {
+    ul {
+        padding-left: 24px;
+        border-left: 1px solid #96a9c4;
+        margin-left: 24px;
+    }
+    li + li {
+        margin-top: 24px;
+    }
+    img {
+        margin: 8px 0;
+    }
+    p {
+        width: 650px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+/*==========================skills==========================*/
+.skills {
+    background: #415165;
+    color: #fff;
+    .container {
+        width: 100%;
+        max-width: 996px;
+        padding: 24px 0 36px;
+    }
+    h2 {
+        justify-content: center;
+        border-color: #fff;
+        margin-bottom: 40px;
+    }
+    span {
+        color: #fff;
+    }
+    ul {
+        width: 200px;
+        margin: 0 auto;
+        padding-left: 24px;
+        border-left: 1px solid #96a9c4;
+    }
+    li {
+        font-weight: 300;
+    }
+    li + li {
+        margin-top: 12px;
+    }
+}
+/*==========================footer==========================*/
+.footer {
+    background: #415165;
+    color: #fff;
+    text-align: center;
+    .container {
+        padding: 24px 0 36px;
+        margin: 0 auto;
+    }
+    h2 {
+        justify-content: center;
+        border-color: #fff;
+        margin-bottom: 32px;
+    }
+    span {
+        color: #fff;
+    }
+    li {
+        font-weight: 300;
+    }
+    .link_box {
+        display: flex;
+        width: 192px;
+        justify-content: space-between;
+        margin: 16px auto 0;
+    }
+}

@@ -1,0 +1,159 @@
+/*==========================common==========================*/
+h2 span {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #a00404;
+  margin-left: 16px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto 72px;
+}
+
+.container h2 {
+  font-size: 32px;
+  line-height: 43px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.container li {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+/*==========================name==========================*/
+.name .container {
+  margin: 0 auto;
+}
+
+.name h1 {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 80px;
+  line-height: 94px;
+  padding-bottom: 17px;
+  border-bottom: 2px solid #000;
+}
+
+.name img {
+  margin: 48px 0;
+}
+
+/*==========================profile==========================*/
+.profile ul + ul {
+  margin-top: 24px;
+}
+
+/*==========================education==========================*/
+.education li + li {
+  margin-top: 24px;
+}
+
+/*==========================exp==========================*/
+.exp ul {
+  padding-left: 24px;
+  border-left: 1px solid #96a9c4;
+  margin-left: 24px;
+}
+
+.exp li + li {
+  margin-top: 24px;
+}
+
+.exp img {
+  margin: 8px 0;
+}
+
+.exp p {
+  width: 650px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/*==========================skills==========================*/
+.skills {
+  background: #415165;
+  color: #fff;
+}
+
+.skills .container {
+  width: 100%;
+  max-width: 996px;
+  padding: 24px 0 36px;
+}
+
+.skills h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-color: #fff;
+  margin-bottom: 40px;
+}
+
+.skills span {
+  color: #fff;
+}
+
+.skills ul {
+  width: 200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  border-left: 1px solid #96a9c4;
+}
+
+.skills li {
+  font-weight: 300;
+}
+
+.skills li + li {
+  margin-top: 12px;
+}
+
+/*==========================footer==========================*/
+.footer {
+  background: #415165;
+  color: #fff;
+  text-align: center;
+}
+
+.footer .container {
+  padding: 24px 0 36px;
+  margin: 0 auto;
+}
+
+.footer h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-color: #fff;
+  margin-bottom: 32px;
+}
+
+.footer span {
+  color: #fff;
+}
+
+.footer li {
+  font-weight: 300;
+}
+
+.footer .link_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 192px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 16px auto 0;
+}
